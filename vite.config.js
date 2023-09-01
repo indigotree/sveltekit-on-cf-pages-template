@@ -1,13 +1,13 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import mkcert from 'vite-plugin-mkcert';
+import { sveltekit } from "@sveltejs/kit/vite";
+import mkcert from "vite-plugin-mkcert";
 
 const config = {
 	server: {
 		https: true,
-		proxy: {}
+		proxy: {},
 	},
 
-	plugins: [sveltekit(), mkcert()]
+	plugins: [sveltekit(), mkcert()],
 };
 
 export default config;

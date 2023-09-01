@@ -1,14 +1,14 @@
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from "@sveltejs/adapter-cloudflare";
 
 const config = {
 	kit: {
 		adapter: adapter({
 			routes: {
-				include: ['/*'],
-				exclude: ['<all>']
-			}
-		})
-	}
+				include: ["/*"],
+				exclude: ["<all>"],
+			},
+		}),
+	},
 };
 
 export default config;
